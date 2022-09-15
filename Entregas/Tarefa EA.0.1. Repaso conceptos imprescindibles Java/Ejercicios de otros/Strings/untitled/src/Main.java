@@ -5,7 +5,6 @@ public class Main {
         String dos = "Prueba";
         
         // Ejercicio 1
-        System.out.println(uno);
         System.out.println(uno.replace("o", "ue"));
 
         //Ejercicio 2
