@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: fixed;
+    background-color: dimgrey;
+}
+
+.centro{
+    position: absolute;
+    top: 40%;
+    left: 43%;
+}
+
+.centro h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.centro form{
+    text-align: center;
+}
+#find{
+    text-align: center;
+    font-size: 60px;
+}
+
+.usuario{
+    padding: 10px;
+}
+.usuario input{
+    padding-left: 5px;
+}
+.password input{
+    padding-left: 5px; 
+}
+
+.usuario label{
+    font-size: 20px;
+}
+
+.password label{
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    width:  100%;
+    height: 30px;
+}
