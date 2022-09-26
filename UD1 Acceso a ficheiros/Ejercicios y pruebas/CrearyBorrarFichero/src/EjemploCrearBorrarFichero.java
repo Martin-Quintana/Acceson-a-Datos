@@ -17,7 +17,7 @@ public class EjemploCrearBorrarFichero {
             }
 
 
-            Path fichero = Paths.get()
+
             System.out.println("Ruta absoluta: " + fichero.toAbsolutePath());
             System.out.print("Quieres borrar el fichero " + fichero + "(s/N)? ");
             if (sc.nextLine().equalsIgnoreCase("s")) {
