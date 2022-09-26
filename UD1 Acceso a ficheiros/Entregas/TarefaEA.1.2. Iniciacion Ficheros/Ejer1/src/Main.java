@@ -22,7 +22,7 @@ public class Main {
         } else if (dir.isFile()) {
             System.out.println("-"+permisos+"- archivo");
         }else{
-            System.out.println("Esta ruta no es un fichero ni un directorio");
+            System.err.println("Esta ruta no es un fichero ni un directorio");
         }
     }
 }
