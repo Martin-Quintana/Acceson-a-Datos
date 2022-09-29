@@ -1,4 +1,3 @@
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -16,7 +15,7 @@ public class Main {
         var rutaArchivo = Path.of("res\\coches.txt");
 
         //Lista de Strings
-        List<String> lineas = null;
+        List<String> lineas; //Se podria igualar a null pero es redundante
         HashMap<String, ArrayList<String>> mym = new HashMap<>();
         try {
             lineas = Files.readAllLines(rutaArchivo);//Para que se lean todas la lineas
@@ -34,7 +33,6 @@ public class Main {
             //Opcion 1
             mym.putIfAbsent(marca, new ArrayList<>());
             mym.get(marca).add(modelo);
-
         });
 
         //Array para guardar marcas y modelos
