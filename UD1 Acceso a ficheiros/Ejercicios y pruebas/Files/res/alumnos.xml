@@ -1,0 +1,12 @@
+<alumnos>
+    <alumno>
+        <nombre>Adrian</nombre>
+        <ciudad>Vigo</ciudad>
+        <telefono>677668899</telefono>
+    </alumno>
+    <alumno>
+        <nombre>Gael</nombre>
+        <ciudad>Vigo</ciudad>
+        <telefono>677668891</telefono>
+    </alumno>
+</alumnos>

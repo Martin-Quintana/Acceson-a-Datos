@@ -1,0 +1,14 @@
+{
+  "alumnos": [
+    {
+      "nombre": "Adrián",
+      "ciudad": "Vigo",
+      "edad": 19
+    },
+    {
+      "nombre": "Gael",
+      "ciudad": "Vigo",
+      "edad": 23
+    }
+  ]
+}
