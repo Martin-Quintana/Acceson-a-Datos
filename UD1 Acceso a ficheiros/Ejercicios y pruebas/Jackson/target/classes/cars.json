@@ -1,1 +1,10 @@
-[{"color":"red","type":"renault"},{"color":"blue","type":"renault"}]
+[
+  {
+    "color": "red",
+    "type": "renault"
+  },
+  {
+    "color": "blue",
+    "type": "renault"
+  }
+]
