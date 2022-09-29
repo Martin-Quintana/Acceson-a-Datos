@@ -1,35 +1,65 @@
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
+import java.util.List;
+
 
 public class Main {
 
 
     public static void main(String[] args) {
-        Map<String, String> coches = new HashMap();
-        try {
-            FileReader fr = new FileReader("res\\coches.txt");
-            BufferedReader bf = new BufferedReader(fr);
-            String linea;
-            while ((linea = bf.readLine()) != null) {
-                String[] coche = linea.split(" ");
-                if (coches.containsKey(coche[0])){
-                    coches.get(coche[0]).add;
-                }
-            }
 
-            System.out.println("Modelos importadas correctamente");
-        } catch (FileNotFoundException e) {
-            System.err.println("Fichero no encontrado");
-            e.printStackTrace();
+        //Path del archivo de coches
+        var rutaArchivo = Path.of("res\\coches.txt");
+
+        //Lista de Strings
+        List<String> lineas = null;
+        HashMap<String, ArrayList<String>> mym = new HashMap<>();
+        try {
+            lineas = Files.readAllLines(rutaArchivo);//Para que se lean todas la lineas
         } catch (IOException e) {
-            System.err.println("Error de E/S");
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
 
 
+        //Divide el String en marca y modelo
+        lineas.forEach((linea) -> {
+            //System.out.println(linea);
+            String[] parts = linea.split(" ", 2);
+            String marca = parts[0];
+            String modelo = parts[1];
+            //Opcion 1
+            mym.putIfAbsent(marca, new ArrayList<>());
+            mym.get(marca).add(modelo);
+
+        });
+
+        //Array para guardar marcas y modelos
+        ArrayList<String> lineasSalida = new ArrayList<>();
+
+        mym.forEach((marca, modelos) -> {
+            var resultado = "";
+            resultado += marca;
+            resultado += ": ";
+            modelos.sort(null);
+            resultado += String.join(", ", modelos);//Quitar corchetes
+            lineasSalida.add(resultado);
+        });
+
+        lineasSalida.sort(null);
+        System.out.println(String.join(System.lineSeparator(), lineasSalida));
+
+        var salida = String.join(System.lineSeparator(), lineasSalida);
+        //Almacenar en un nuevo fichero
+        try {
+            Files.writeString(Path.of("res\\marcas.txt"), salida);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
+
+
 }
