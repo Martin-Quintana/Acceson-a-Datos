@@ -1,0 +1,38 @@
+{
+  "listas": [
+    {
+      "nombre": "Perykito",
+      "Creation Date": "15/09/2022",
+      "tracks":
+      [
+        {
+          "tittle": "Pepas",
+          "author": "Farruko",
+          "duracion": "duracion"
+        },
+        {
+          "tittle": "Pepas",
+          "author": "Farruko",
+          "duracion": "duracion"
+        }
+      ]
+    },
+    {
+      "nombre": "Perykito Saltarin",
+      "Creation Date": "20/09/2022",
+      "tracks":
+      [
+        {
+          "tittle": "Home",
+          "author": "Martin Garrix",
+          "duracion": "duracion"
+        },
+        {
+          "tittle": "Umbreackable",
+          "author": "TELYKast",
+          "duracion": "duracion"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "__": "Realizado por Martin Quintana",
+  "juegos": [
+    {
+      "nombre": "Valorant",
+      "version": "5.06",
+      "descripcion": "Una Basura de Juego",
+      "idiomas": [
+        "es",
+        "en",
+        "gl",
+        "de",
+        "fr"
+      ],
+      "capturas": [
+        {
+          "textoAlt": "Lorem ipsum",
+          "url": "/resources/images/com.ajedrez.ajedrez/1.jpg"
+        },
+        {
+          "textoAlt": "dolor sit amet",
+          "url": "/resources/images/com.ajedrez.ajedrez/2.jpg"
+        },
+        {
+          "textoAlt": "consectetur adipiscing elit",
+          "url": "/resources/images/com.ajedrez.ajedrez/3.jpg"
+        }
+      ],
+      "valoraciones": [
+        {
+          "usuario": "pepito_69",
+          "estrellas": 5,
+          "contenido": "Gran juego amigo aunque se crashea todo el día"
+        },
+        {
+          "usuario": "karen_america",
+          "estrellas": 1,
+          "contenido": "Funciona bien pero siempre pierdo"
+        }
+      ]
+    },
+    {
+      "nombre": "Parchís",
+      "version": "400.3",
+      "descripcion": "El parchís de toda la vida, con soporte multijugador",
+      "idiomas": [
+        "en",
+        "cn"
+      ],
+      "capturas": [
+        {
+          "textoAlt": "Lorem ipsum",
+          "url": "/resources/images/com.bigtech.parchis/1.jpg"
+        },
+        {
+          "textoAlt": "dolor sit amet",
+          "url": "/resources/images/com.bigtech.parchis/2.jpg"
+        },
+        {
+          "textoAlt": null,
+          "url": "/resources/images/com.bigtech.parchis/3.jpg"
+        }
+      ],
+      "valoraciones": [
+        {
+          "usuario": "pepito_69",
+          "estrellas": 5,
+          "contenido": "Gran juego amigo pero mucha publicidad"
+        },
+        {
+          "usuario": "viva_vigo",
+          "estrellas": 4,
+          "contenido": "Muchas luces, como mi ciudad"
+        }
+      ]
+    }
+  ],
+  "usuarios": {
+    "pepito_69": {
+      "avatar": "/avatar/img.png?i=696969696",
+      "nombre": "Pepito"
+    },
+    "karen_america": {
+      "avatar": "/avatar/img.png?i=420420420",
+      "nombre": "Karen"
+    },
+    "viva_vigo": {
+      "avatar": "/avatar/img.png?i=111222333",
+      "nombre": "Havel Kavayero"
+    }
+  }
+}
