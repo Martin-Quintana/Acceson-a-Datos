@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4921c026-f378-42a7-89ea-b180d0ce225c" name="Changes" comment="" />
+    <list default="true" id="4921c026-f378-42a7-89ea-b180d0ce225c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Tarefa EA.1.3. Ficheros JSON/Ejercicio 2/games.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tarefa EA.1.3. Ficheros JSON/Ejercicio 2/games.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,10 +19,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2FIwKXwXQHn75czC1oA0LN9sIQj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -30,7 +36,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/a21martinqr/Documents/Martin/Acceson-a-Datos/UD1 Acceso a ficheiros/Entregas/TarefaEA.1.2. Iniciacion Ficheros/Ejer1",
+    "last_opened_file_path": "C:/Users/marti/Documents/Clase CS 2 DAM/Acceson-a-Datos/UD1 Acceso a ficheiros/Entregas/Tarefa EA.1.2. Iniciacion Ficheros/Ejer02",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -47,10 +53,22 @@
       <updated>1664192843789</updated>
       <workItem from="1664192844962" duration="638000" />
       <workItem from="1664193544862" duration="54000" />
+      <workItem from="1664703872787" duration="162000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
