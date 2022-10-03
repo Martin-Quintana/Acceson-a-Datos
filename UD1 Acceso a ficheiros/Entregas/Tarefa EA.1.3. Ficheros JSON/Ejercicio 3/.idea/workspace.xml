@@ -4,23 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="085dff6d-db3d-4ddd-877b-759838302d08" name="Changes" comment="" />
+    <list default="true" id="be8e0b47-5322-4690-8040-f081a3a3962d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2FTxblJh7xt2CSfMU5oCzGTbjNn" />
+  <component name="ProjectId" id="2Fc5uXzmd7DLKpWDlA2D6WXS6wO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,22 +27,19 @@
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="085dff6d-db3d-4ddd-877b-759838302d08" name="Changes" comment="" />
-      <created>1664529950228</created>
+      <changelist id="be8e0b47-5322-4690-8040-f081a3a3962d" name="Changes" comment="" />
+      <created>1664778755089</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1664529950228</updated>
-      <workItem from="1664529951435" duration="183000" />
-      <workItem from="1664778727907" duration="27000" />
+      <updated>1664778755089</updated>
+      <workItem from="1664778757762" duration="36000" />
+      <workItem from="1664798406937" duration="2125000" />
     </task>
     <servers />
   </component>

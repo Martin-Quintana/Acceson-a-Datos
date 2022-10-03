@@ -1,6 +1,7 @@
 {
   "pokedex": [
     {
+      "id": 1,
       "name": "BULBASAUR",
       "type": [
         "Grass",
@@ -8,16 +9,14 @@
       ],
       "ability": "Overgrow",
       "exp": 1059860,
-      "stats": [
-        {
-          "hp": 45,
-          "atk": 49,
-          "def": 49,
-          "spd": 45,
-          "sat": 65,
-          "sdf": 65
-        }
-      ],
+      "stats": {
+        "hp": 45,
+        "atk": 49,
+        "def": 49,
+        "spd": 45,
+        "sat": 65,
+        "sdf": 65
+      },
       "evolutions": [
         {
           "name": "Bulbasaur"
