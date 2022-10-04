@@ -1,7 +1,8 @@
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class Main {
 
@@ -19,15 +20,8 @@ public class Main {
             System.err.println("No se ha creado el archivo games.bin");
 
         }
-        Game g2;
-        try (var ois = new ObjectInputStream(new FileInputStream("games.bin")) {
+        ObjectMapper om = new ObjectMapper();
 
 
-
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
     }
 }
