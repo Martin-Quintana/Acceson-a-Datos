@@ -1,5 +1,9 @@
+import com.fasterxml.jackson.annotation.JsonRootName;
+
 import java.io.Serializable;
 import java.util.ArrayList;
+
+@JsonRootName(value = "game")
 
 public class Game implements Serializable {
     private String name;
