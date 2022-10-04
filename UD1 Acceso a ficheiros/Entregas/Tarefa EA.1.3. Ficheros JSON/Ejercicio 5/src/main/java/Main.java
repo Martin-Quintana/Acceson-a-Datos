@@ -21,7 +21,7 @@ public class Main {
             System.err.println("No se ha creado el archivo games.bin");
         }
 
-        
+
 
         //Leer el archivo .bin
         Game g2;
