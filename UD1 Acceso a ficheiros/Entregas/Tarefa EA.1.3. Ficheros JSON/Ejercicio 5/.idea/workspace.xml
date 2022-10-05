@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abc6e3e7-eea3-471c-83fb-6e2a738e3962" name="Changes" comment="" />
+    <list default="true" id="abc6e3e7-eea3-471c-83fb-6e2a738e3962" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Tarefa EA.1.2. Iniciacion Ficheros/Ejer02/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tarefa EA.1.2. Iniciacion Ficheros/Ejer02/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,10 +19,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Fcp9Ra9RcioBcz0x7342hHoGpG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -30,7 +36,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+<<<<<<< Updated upstream
     "last_opened_file_path": "C:/Users/a21martinqr/Documents/Martin/Acceson-a-Datos/UD1 Acceso a ficheiros/Entregas/Tarefa EA.1.3. Ficheros JSON/Ejercicio 5",
+=======
+    "last_opened_file_path": "C:/Users/marti/Documents/Clase CS 2 DAM/Acceson-a-Datos/UD1 Acceso a ficheiros/Entregas/Tarefa EA.1.3. Ficheros JSON/Ejercicio 5",
+>>>>>>> Stashed changes
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,13 +60,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664801075535</updated>
+<<<<<<< Updated upstream
       <workItem from="1664801076775" duration="2206000" />
       <workItem from="1664864795859" duration="3146000" />
       <workItem from="1664965622440" duration="87000" />
+=======
+      <workItem from="1664801076775" duration="1836000" />
+      <workItem from="1664808961575" duration="618000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
