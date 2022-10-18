@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4921c026-f378-42a7-89ea-b180d0ce225c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Tarefa EA.1.3. Ficheros JSON/Ejercicio 2/games.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tarefa EA.1.3. Ficheros JSON/Ejercicio 2/games.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +37,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/marti/Documents/Clase CS 2 DAM/Acceson-a-Datos/UD1 Acceso a ficheiros/Entregas/Tarefa EA.1.2. Iniciacion Ficheros/Ejer02",
+    "last_opened_file_path": "C:/Users/marti/Documents/Clase CS 2 DAM/Proyectos/proyectoud1-iago-martin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,6 +55,7 @@
       <workItem from="1664192844962" duration="638000" />
       <workItem from="1664193544862" duration="54000" />
       <workItem from="1664703872787" duration="162000" />
+      <workItem from="1665571170751" duration="798000" />
     </task>
     <servers />
   </component>
