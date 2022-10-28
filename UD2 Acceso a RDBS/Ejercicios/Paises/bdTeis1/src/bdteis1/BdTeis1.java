@@ -1,18 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package bdteis1;
 
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-
-
-
-
 
 /**
  *
@@ -28,9 +18,9 @@ public class BdTeis1 {
  
         try {
             Class.forName("org.mariadb.jdbc.Driver");
-            String jdbcUrl = "jdbc:mariadb://localhost:3306/teis1";
+            String jdbcUrl = "jdbc:mysql://localhost:3306/paises";
             
-            Connection con = DriverManager.getConnection(jdbcUrl, "root", "");
+            Connection con = DriverManager.getConnection(jdbcUrl, "root", "root");
             
             Statement stmt = con.createStatement(); 
             ResultSet rs = stmt.executeQuery("SELECT * FROM alumnos"); 
