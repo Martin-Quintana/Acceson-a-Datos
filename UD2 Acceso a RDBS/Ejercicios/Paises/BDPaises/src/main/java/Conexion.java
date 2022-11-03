@@ -3,9 +3,6 @@ import java.sql.*;
 public class Conexion {
     private static Connection connection = null;
 
-    private static ResultSet resultSet = null;
-
-    private static Statement statement = null;
     private static final String driver = "com.mysql.cj.jdbc.Driver";
 
     private static final String url = "jdbc:mysql://localhost:3306/paises";
@@ -14,7 +11,7 @@ public class Conexion {
 
     private static final String pass = "root";
 
-    public static Connection conexionBD () {
+    public static void conexionBD () {
         try {
             Class.forName(driver);
             connection = DriverManager.getConnection(url, user, pass);
@@ -25,7 +22,6 @@ public class Conexion {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return connection;
     }
 
     public static void mostrarPaises() {
@@ -33,8 +29,8 @@ public class Conexion {
             Class.forName(driver);
             connection = DriverManager.getConnection(url, user, pass);
 
-            statement = connection.createStatement();
-            resultSet = statement.executeQuery("select * from country");
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("select * from country");
 
             while (resultSet.next()){
                 System.out.println(resultSet.getString("Pais"));
