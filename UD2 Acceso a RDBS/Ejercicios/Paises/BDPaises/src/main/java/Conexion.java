@@ -28,12 +28,15 @@ public class Conexion {
         try {
             Class.forName(driver);
             connection = DriverManager.getConnection(url, user, pass);
-
             Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("select * from country");
+
+
+            ResultSet resultSet = statement.executeQuery("select * from country;");
+
 
             while (resultSet.next()){
-                System.out.println(resultSet.getString("Pais"));
+                String pais = resultSet.getString("pais");
+                System.out.println(pais);
             }
 
         } catch (SQLException e) {

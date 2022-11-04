@@ -4,9 +4,8 @@ use paises;
 
 drop table if exists country;
 CREATE TABLE country (
-id int not null auto_increment primary key,
-name varchar(80)
+pais varchar(80)
 );
 
-INSERT INTO country (name) VALUES('Afganistán');
-INSERT INTO country (name) VALUES('Islas Gland');
+INSERT INTO country (pais) VALUES('Afganistán');
+INSERT INTO country (pais) VALUES('Islas Gland');
