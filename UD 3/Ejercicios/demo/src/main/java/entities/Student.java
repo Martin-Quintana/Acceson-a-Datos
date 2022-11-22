@@ -13,19 +13,20 @@ public class Student {
     @Id
     //Para que el id se autoincremnte
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idStundent;
+    private int id;
 
 
     //Relacion de muchos a uno
-    @ManyToOne
-    //Unimos columnas 
+    @ManyToOne(cascade = CascadeType.ALL)
+    //Unimos columnas
     @JoinColumn(name = "idCourse")
-    private Student student;
+    private Course course;
 
 
     //Poner el nombre de la columna
     @Column(name = "nombre")
     private String name;
+    @Column(name = "apellidos")
     private String surname;
 
     //Constructor vacio
@@ -40,5 +41,10 @@ public class Student {
     //Setter de name
     public void setName(String name) {
         this.name = name;
+    }
+    //Setter de course
+
+    public void setCourse(Course course) {
+        this.course = course;
     }
 }

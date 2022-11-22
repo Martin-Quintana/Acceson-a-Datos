@@ -1,9 +1,8 @@
+import entities.Course;
 import entities.Student;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
-
-import javax.swing.text.html.parser.Entity;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,11 +13,19 @@ public class Main {
         entityManager.getTransaction().begin();
         entityManager.persist(student);
         entityManager.getTransaction().commit();
-        entityManagerFactory.close();
 
         student.setName("Anton");
+        Course course = new Course("DAM");
+        student.setCourse(course);
+
+        entityManager.persist(course);
+
+
         entityManager.getTransaction().begin();
         entityManager.persist(student);
         entityManager.getTransaction().commit();
+
+        entityManager.close();
+        entityManagerFactory.close();
     }
 }
