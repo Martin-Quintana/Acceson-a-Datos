@@ -7,13 +7,18 @@ import javax.swing.text.html.parser.Entity;
 
 public class Main {
     public static void main(String[] args) {
-        Student s = new Student("Anna");
+        Student student = new Student("Anna");
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("default");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         entityManager.getTransaction().begin();
-        entityManager.persist(s);
+        entityManager.persist(student);
         entityManager.getTransaction().commit();
         entityManagerFactory.close();
+
+        student.setName("Anton");
+        entityManager.getTransaction().begin();
+        entityManager.persist(student);
+        entityManager.getTransaction().commit();
     }
 }
