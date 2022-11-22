@@ -1,5 +1,6 @@
 package entities;
 
+
 import jakarta.persistence.*;
 
 //Poner para poder crear una clase de tipo entity y que la use la base de datos
@@ -12,7 +13,14 @@ public class Student {
     @Id
     //Para que el id se autoincremnte
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int idStundent;
+
+
+    //Relacion de muchos a uno
+    @ManyToOne
+    //Unimos columnas 
+    @JoinColumn(name = "idCourse")
+    private Student student;
 
 
     //Poner el nombre de la columna
