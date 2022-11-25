@@ -4,6 +4,14 @@
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
     <persistence-unit name="default">
+        <class>entities.Books</class>
+        <class>entities.BooksMovies</class>
+        <class>entities.Chapters</class>
+        <class>entities.Characters</class>
+        <class>entities.Dialogs</class>
+        <class>entities.Marriage</class>
+        <class>entities.Movies</class>
+        <class>entities.Realms</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/lotr"/>
@@ -11,6 +19,10 @@
             <property name="javax.persistence.jdbc.password" value="root"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
             <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/lotr"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="root"/>
         </properties>
 
     </persistence-unit>
