@@ -12,8 +12,8 @@ public class    Main {
         EntityManagerFactory emf= Persistence.createEntityManagerFactory("default");
         EntityManager em = emf.createEntityManager();
         consulta1(em);
-//        consulta2(em);
-//        consulta3(em);
+        //consulta2(em);
+        //consulta3(em);
 
     }
 
