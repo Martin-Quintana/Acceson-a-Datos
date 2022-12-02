@@ -1,20 +1,16 @@
-package entities;
+package entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
+@Table(name="house")
 public class House {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    private String name;
+    private Person personByHeadTeacher;
+
     @Id
     @Column(name = "id")
-    private int id;
-    @Basic
-    @Column(name = "name")
-    private String name;
-    @Basic
-    @Column(name = "head_teacher")
-    private int headTeacher;
-
     public int getId() {
         return id;
     }
@@ -23,20 +19,14 @@ public class House {
         this.id = id;
     }
 
+    @Basic
+    @Column(name = "name")
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public int getHeadTeacher() {
-        return headTeacher;
-    }
-
-    public void setHeadTeacher(int headTeacher) {
-        this.headTeacher = headTeacher;
     }
 
     @Override
@@ -47,7 +37,6 @@ public class House {
         House house = (House) o;
 
         if (id != house.id) return false;
-        if (headTeacher != house.headTeacher) return false;
         if (name != null ? !name.equals(house.name) : house.name != null) return false;
 
         return true;
@@ -57,7 +46,16 @@ public class House {
     public int hashCode() {
         int result = id;
         result = 31 * result + (name != null ? name.hashCode() : 0);
-        result = 31 * result + headTeacher;
         return result;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "head_teacher", referencedColumnName = "id", nullable = false)
+    public Person getPersonByHeadTeacher() {
+        return personByHeadTeacher;
+    }
+
+    public void setPersonByHeadTeacher(Person personByHeadTeacher) {
+        this.personByHeadTeacher = personByHeadTeacher;
     }
 }

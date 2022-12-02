@@ -1,23 +1,19 @@
-package entities;
+package entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
+@Table(name="person")
 public class Person {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    private String firstName;
+    private String lastName;
+    private House houseByHouseId;
+    private List<Course> courses;
+
     @Id
     @Column(name = "id")
-    private int id;
-    @Basic
-    @Column(name = "first_name")
-    private String firstName;
-    @Basic
-    @Column(name = "last_name")
-    private String lastName;
-    @Basic
-    @Column(name = "house_id")
-    private Integer houseId;
-
     public int getId() {
         return id;
     }
@@ -26,6 +22,8 @@ public class Person {
         this.id = id;
     }
 
+    @Basic
+    @Column(name = "first_name")
     public String getFirstName() {
         return firstName;
     }
@@ -34,20 +32,14 @@ public class Person {
         this.firstName = firstName;
     }
 
+    @Basic
+    @Column(name = "last_name")
     public String getLastName() {
         return lastName;
     }
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public Integer getHouseId() {
-        return houseId;
-    }
-
-    public void setHouseId(Integer houseId) {
-        this.houseId = houseId;
     }
 
     @Override
@@ -60,7 +52,6 @@ public class Person {
         if (id != person.id) return false;
         if (firstName != null ? !firstName.equals(person.firstName) : person.firstName != null) return false;
         if (lastName != null ? !lastName.equals(person.lastName) : person.lastName != null) return false;
-        if (houseId != null ? !houseId.equals(person.houseId) : person.houseId != null) return false;
 
         return true;
     }
@@ -70,7 +61,25 @@ public class Person {
         int result = id;
         result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
         result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
-        result = 31 * result + (houseId != null ? houseId.hashCode() : 0);
         return result;
     }
+
+    @ManyToOne
+    @JoinColumn(name = "house_id", referencedColumnName = "id")
+    public House getHouseByHouseId() {
+        return houseByHouseId;
+    }
+
+    public void setHouseByHouseId(House houseByHouseId) {
+        this.houseByHouseId = houseByHouseId;
+    }
+
+    @ManyToMany(cascade = CascadeType.DETACH, mappedBy = "people")
+    public List<Course> getCourses() { return courses; }
+
+    public void setCourses(List<Course> courses) {
+        this.courses = courses;
+    }
+
+
 }

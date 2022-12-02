@@ -1,20 +1,18 @@
-package entities;
+package entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
+@Table(name="course")
 public class Course {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    private String name;
+    private List<Person> people;
+    private Person teacher;
+
     @Id
     @Column(name = "id")
-    private int id;
-    @Basic
-    @Column(name = "name")
-    private String name;
-    @Basic
-    @Column(name = "teacher_id")
-    private Integer teacherId;
-
     public int getId() {
         return id;
     }
@@ -23,20 +21,14 @@ public class Course {
         this.id = id;
     }
 
+    @Basic
+    @Column(name = "name")
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Integer getTeacherId() {
-        return teacherId;
-    }
-
-    public void setTeacherId(Integer teacherId) {
-        this.teacherId = teacherId;
     }
 
     @Override
@@ -48,7 +40,6 @@ public class Course {
 
         if (id != course.id) return false;
         if (name != null ? !name.equals(course.name) : course.name != null) return false;
-        if (teacherId != null ? !teacherId.equals(course.teacherId) : course.teacherId != null) return false;
 
         return true;
     }
@@ -57,7 +48,26 @@ public class Course {
     public int hashCode() {
         int result = id;
         result = 31 * result + (name != null ? name.hashCode() : 0);
-        result = 31 * result + (teacherId != null ? teacherId.hashCode() : 0);
         return result;
+    }
+
+    @ManyToMany(cascade = CascadeType.DETACH)
+    @JoinTable(name="enrollment",
+            joinColumns={@JoinColumn(name="person_enrollment")},
+            inverseJoinColumns={@JoinColumn(name="course_enrollment")})
+    public List<Person> getPeople() { return people; }
+
+    public void setPeople(List<Person> people) {
+        this.people = people;
+    }
+
+    @ManyToOne
+    @JoinColumn (name = "teacher_id")
+    public Person getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(Person teacher) {
+        this.teacher = teacher;
     }
 }
