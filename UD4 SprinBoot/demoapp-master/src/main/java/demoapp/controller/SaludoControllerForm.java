@@ -30,6 +30,7 @@ public class SaludoControllerForm {
             return "formRegistro";
         }
         model.addAttribute("mensaje", service.saluda(userData.getNombre()));
+        model.addAttribute("edad", service.edad(userData.getEdad().toString()));
         return "saludo";
     }
 }
