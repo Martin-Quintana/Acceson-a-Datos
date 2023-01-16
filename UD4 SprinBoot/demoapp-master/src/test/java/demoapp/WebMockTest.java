@@ -11,6 +11,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import static org.hamcrest.Matchers.containsString;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -36,10 +37,13 @@ public class WebMockTest {
     public void greetingShouldReturnMessageFromService() throws Exception {
 
         // Y especificar lo que debe devolver una llamada a uno de sus métodos
-        when(service.saluda("Domingo")).thenReturn("Hola Mock Domingo");
+        when(service.saluda("Martin")).thenReturn("Hola Mock Martin");
 
-        this.mockMvc.perform(get("/saludo/Domingo"))
+        this.mockMvc.perform(post("/saludoform")
+                        .param("nombre", "Martin")
+                        .param("edad", "18")
+                        .param("dni", "77480731X"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(containsString("Hola Mock Domingo")));
+                .andExpect(content().string(containsString("Hola Mock Martin Saludo: Hola Martin tienes 18 anhos con DNI: 77480731X")));
     }
 }

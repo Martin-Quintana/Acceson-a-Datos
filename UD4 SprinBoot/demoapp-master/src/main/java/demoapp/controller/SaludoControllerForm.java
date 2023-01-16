@@ -43,6 +43,8 @@ public class SaludoControllerForm {
 
         //Model 'edad'
         model.addAttribute("edad", service.edad(userData.getEdad().toString()));
+
+        model.addAttribute("dni", service.dni(userData.getDni()));
         return "saludo";
     }
 }

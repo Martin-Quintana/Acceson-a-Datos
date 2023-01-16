@@ -14,4 +14,7 @@ public class SaludoService {
     public String edad(String edad) { return " tienes " + edad + " anhos";
     }
 
+    public String dni(String dni) {return " con DNI: " + dni;
+    }
+
 }
